@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="lib/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="E:/workspace/Blood Test/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="E:/workspace/Blood Test/lib/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workspace/Blood Test/lib/commons-logging-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/workspace/Blood Test/lib/org-apache-commons-logging.jar"/>
+	<classpathentry kind="lib" path="E:/workspace/Blood Test/lib/commons.collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="E:/workspace/Blood Test/lib/commons-beanutils-core-1.8.0.jar"/>
+	<classpathentry kind="lib" path="E:/workspace/Blood Test/lib/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="E:/workspace/Blood Test/lib/groovy-all-1.8.0.jar"/>
+	<classpathentry kind="lib" path="E:/workspace/Blood Test/lib/jdt-compiler-3.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/workspace/Blood Test/lib/joda-time-2.4.jar"/>
+	<classpathentry kind="lib" path="E:/workspace/Blood Test/lib/spring-beans-3.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workspace/Blood Test/lib/org.springframework.beans-3.1.2.release.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.core-3.1.0.M2.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.asm-3.1.0.M1.jar"/>
+	<classpathentry kind="lib" path="lib/jaxen-1.1.4-sources.jar"/>
+	<classpathentry kind="lib" path="lib/itext-2.1.7.jar"/>
+	<classpathentry kind="con" path="net.sf.jasperreports.JR_CONTAINER"/>
+	<classpathentry kind="con" path="com.jaspersoft.server.JRS_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

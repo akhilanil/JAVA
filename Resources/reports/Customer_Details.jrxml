@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
+<!-- 2015-09-26T11:19:55 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Customer_Details" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4eedbb89-b4f6-4469-9ab6-f642a1688cf7">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Test Adapter"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Times New Roman" fontSize="50" isBold="false" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#CCCCCC" fontName="Times New Roman" fontSize="18" isBold="false" pdfFontName="Times-Roman"/>
+	<style name="Column header" forecolor="#666666" fontName="Times New Roman" fontSize="14" isBold="true"/>
+	<style name="Detail" mode="Transparent" fontName="Times New Roman"/>
+	<style name="Row" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#EEEFF0"/>
+		</conditionalStyle>
+	</style>
+	<style name="Table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<leftPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+			<rightPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#CACED0">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#D8D8D8"/>
+		</conditionalStyle>
+	</style>
+	<subDataset name="tableDataset" uuid="f13e6d36-5148-4ecc-bbe3-3035def80980">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<queryString>
+		<![CDATA[select * from customer order by ((date_and_time)) asc]]>
+	</queryString>
+	<field name="customer_id" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="phoneno" class="java.lang.String"/>
+	<field name="doc_reference" class="java.lang.String"/>
+	<field name="age" class="java.lang.Integer"/>
+	<field name="gender" class="java.lang.String"/>
+	<field name="date_and_time" class="java.sql.Timestamp"/>
+	<field name="discount" class="java.lang.Float"/>
+	<title>
+		<band height="108" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="80" width="556" height="1" uuid="806ce5df-1219-4876-ae0c-ca7405b1f246">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="110" y="0" width="446" height="25" uuid="5780acb5-42bc-4df9-9923-836e774d982a">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[AAJ LABORATORIES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="25" width="446" height="15" uuid="c984cb40-e031-451b-a15c-b8aca8a59990"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isItalic="true"/>
+				</textElement>
+				<text><![CDATA[ Mar Ivanios Vidyanagar, Nalanchira P.O]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="40" width="446" height="15" uuid="f660b696-f1d1-4710-b180-176021acbac9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isItalic="true"/>
+				</textElement>
+				<text><![CDATA[0471-2366569, www.aajlaboratories.com]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="80" height="80" uuid="1c9094be-e1c7-4726-86fd-d240e75aa7cb"/>
+				<imageExpression><![CDATA["Logo.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="80" width="556" height="20" uuid="2d9542cc-63a1-441d-b3a8-8dc786dbe72c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[CUSTOMER DETAILS]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="100" width="556" height="1" uuid="86d80ce4-17ca-460d-b5bb-2818c50ed134"/>
+			</line>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="20">
+			<staticText>
+				<reportElement style="Column header" positionType="Float" x="15" y="0" width="30" height="20" forecolor="#000000" uuid="c43b9589-e0d7-4623-b0be-4b6b111196a6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" positionType="Float" x="60" y="0" width="103" height="20" forecolor="#000000" uuid="2c694a7b-39c0-46d1-b18c-4979508e771e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" positionType="Float" x="163" y="0" width="69" height="20" forecolor="#000000" uuid="38884e90-dcd6-46df-a1a7-90aa8b3efa27"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PHONE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" positionType="Float" x="276" y="0" width="69" height="20" forecolor="#000000" uuid="1c6c2042-4311-4354-bb79-94f3f45011fb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AGE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" positionType="Float" x="345" y="0" width="69" height="20" forecolor="#000000" uuid="6b614132-2bc7-40b9-9ec5-3657d4520acc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GENDER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" positionType="Float" x="414" y="0" width="69" height="20" forecolor="#000000" uuid="7832e002-f302-4b8e-a643-c788447aca03"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TIME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" positionType="Float" x="487" y="0" width="69" height="20" forecolor="#000000" uuid="b014ca41-2f3c-4de7-9e50-913d70563a79"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AMOUNT]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="Detail" positionType="Float" x="0" y="0" width="60" height="20" uuid="964eb083-a489-463c-8b60-e57460d5cb23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{customer_id}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="Detail" positionType="Float" x="60" y="0" width="103" height="20" uuid="25b11daf-31dc-4bb0-bcaf-21426693ce8f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="Detail" positionType="Float" x="138" y="0" width="132" height="20" uuid="87ba1759-efea-459a-8249-18159b5ab66f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{phoneno}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="Detail" positionType="Float" x="276" y="0" width="69" height="20" uuid="bbae1a9a-e25e-46db-87d1-600ff998085a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="Detail" positionType="Float" x="345" y="0" width="69" height="20" uuid="473f4aee-513a-4ab7-b1de-85a6da310602"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="Detail" positionType="Float" x="414" y="0" width="69" height="20" uuid="07db9e3d-6065-46bd-839a-d3865514d53d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date_and_time}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="Detail" positionType="Float" x="483" y="0" width="73" height="20" uuid="7fce033f-240b-498c-bf0b-eb51d91e6a7a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{discount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="177">
+			<line>
+				<reportElement x="0" y="62" width="180" height="1" uuid="0aefac37-2adc-4120-a648-fb1a4335155a"/>
+			</line>
+			<staticText>
+				<reportElement x="180" y="47" width="200" height="30" uuid="296ee558-0e37-4f9f-b115-4a7d874fa817"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[End Of The Report]]></text>
+			</staticText>
+			<line>
+				<reportElement x="380" y="62" width="169" height="1" uuid="8ece94c5-9766-453f-95e4-19d41235ac08"/>
+			</line>
+		</band>
+	</lastPageFooter>
+</jasperReport>
